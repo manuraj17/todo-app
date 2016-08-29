@@ -12,7 +12,12 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
+    firebase: {
+      apiKey: process.env.FIREBASE_KEY,
+      authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+      databaseURL: process.env.FIREBASE_DATABASE_URL,
+      storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -25,6 +30,11 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    // ENV.firebase.apiKey = process.env.FIREBASE_KEY;
+    // ENV.firebase.authDomain = process.env.FIREBASE_AUTH_DOMAIN;
+    // ENV.firebase.databaseURL = process.env.FIREBASE_DATABASE_URL;
+    // ENV.firebase.storageBucket = process.env.FIREBASE_STORAGE_BUCKET;
+
   }
 
   if (environment === 'test') {

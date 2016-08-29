@@ -1,0 +1,8 @@
+<article class="listing">
+  <h3>{{todo.title}}</h3>
+  <div class="priority">
+    <span>Priority:</span> {{todo.priority}}
+  </div>
+  <button class="button" {{action 'remove' todo}}>Remove</button>
+  <button class="button" {{action 'update'}}>Update</button>
+</article>

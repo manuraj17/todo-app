@@ -1,0 +1,28 @@
+Todo<br>
+{{textarea value=newTodo.title cols="80" rows="3" placeholder="Enter todo"}}
+<br>
+Priority<br>
+{{radio-button
+    value="high"
+    groupValue=newTodo.priority
+    name="priority"
+    }}
+    High
+{{#radio-button
+    value="medium"
+    groupValue=newTodo.priority
+    name="priority"
+    }}
+    Medium
+{{/radio-button}}
+
+{{#radio-button
+    value="low"
+    groupValue=newTodo.priority
+    name="priority"
+    }}
+    Low
+{{/radio-button}}
+<br>
+<br>
+<button name="save" class="button" {{action "saveTodo" }}>Save</button>

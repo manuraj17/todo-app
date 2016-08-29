@@ -1,0 +1,14 @@
+<div {{action 'renderNew' }}class="jumbo">
+  <h3>{{#link-to 'new'}}Add Todo{{/link-to}}</h3>
+</div>
+
+{{#each model as |todo|}}
+<article class="listing">
+  <h3>{{todo.title}}</h3>
+  <div class="priority">
+    <span>Priority:</span> {{todo.priority}}
+  </div>
+  <button name="remove" class="button" {{action 'remove' todo}}>Remove</button>
+  {{#link-to 'update' todo}}Update{{/link-to}}
+</article>
+{{/each}}
