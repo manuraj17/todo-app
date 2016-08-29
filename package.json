@@ -10,8 +10,7 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test",
-    "postinstall": "npm install && bower install"
+    "test": "ember test"
   },
   "repository": "",
   "engines": {
