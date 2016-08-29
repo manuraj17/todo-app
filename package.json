@@ -11,7 +11,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "postinstall": "npm install -g ember-cli@2.7"
+    "postinstall": "npm install && bower install"
   },
   "repository": "",
   "engines": {
