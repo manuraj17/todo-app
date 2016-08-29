@@ -10,7 +10,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "postinstall": "npm install -g ember-cli@2.7"
   },
   "repository": "",
   "engines": {
