@@ -2,6 +2,7 @@
 
 A simple todo-app made using ember.js and firebase.
 
+Created by following the ember tutorial:  https://guides.emberjs.com/v2.7.0/tutorial/ember-cli/
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -21,7 +22,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* Export the firebase keys as environment variables 
+* Export the firebase keys as environment variables
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
